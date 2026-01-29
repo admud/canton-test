@@ -4,6 +4,7 @@ import { TenzroPlatform } from '@tenzro/platform'
 const platform = new TenzroPlatform({
   apiKey: process.env.TENZRO_API_KEY,
   tenantId: process.env.CANTON_APP_ID,
+  timeout: 120000,
 })
 
 const contractId = process.argv[2] || '009c1f73b92aa74ef7bffe23dda2a12281::tenzro-devnet'
